@@ -1,17 +1,17 @@
-#define STRBLOB
 #ifndef STRBLOB
+#define STRBLOB
 
 #include <memory>
 #include <vector>
 #include <string>
 #include <initializer_list>
-l
-class StrBob{
+
+class StrBlob{
 public:
 	typedef std::vector<std::string>::size_type size_type;
 	StrBlob();
 	StrBlob(std::initializer_list<std::string> il);
-	size_type size() const { return data->soze(); }
+	size_type size() const { return data->size(); }
 	bool empty() const { return data->empty(); }
 	//добавление и удаление элементов
 	void push_back(const std::string &t) { data->push_back(t); }
