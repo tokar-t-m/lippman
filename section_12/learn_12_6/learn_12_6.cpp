@@ -10,6 +10,7 @@ int main(int argc, char *argv[]){
 	std::vector<int>* ivec = vec_create();
 	in_ivec(ivec);
 	print(ivec);
+	return 0;
 }
 
 std::vector<int>* vec_create(){
