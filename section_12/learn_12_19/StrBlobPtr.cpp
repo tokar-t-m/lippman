@@ -1,4 +1,4 @@
-#include "StrBlobPtr.h"
+//#include "StrBlobPtr.h"
 
 std::shared_ptr<std::vector<std::string>> StrBlobPtr::check(std::size_t i, const std::string &msg) const {
 	auto ret = wptr.lock();

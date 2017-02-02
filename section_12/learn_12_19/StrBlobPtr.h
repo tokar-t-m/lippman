@@ -10,7 +10,7 @@
 class StrBlobPtr{
 public:
 	StrBlobPtr(): curr(0) { }
-	StrBlobPtr(StrBlob &a, size_t sz = 0): wptr(a.data), curr(sz) { }
+	StrBlobPtr(StrBlob a, size_t sz = 0): wptr(a.data), curr(sz) { }
 	std::string& deref() const;
 	StrBlobPtr& incr();
 private:
