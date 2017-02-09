@@ -1,8 +1,7 @@
 #include "HasPtr.h"
 
 HasPtr::HasPtr(const HasPtr& rhs){
-	std::string *pstmp(rhs.ps);
-	ps = new std::string(*pstmp);
+	ps = new std::string(*rhs.ps);
 	i = rhs.i;
 }
 

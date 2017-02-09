@@ -1,14 +1,14 @@
 #include "HasPtr.h"
 
 HasPtr::HasPtr(const HasPtr& rhs){
-	std::string *pstmp(rhs.ps);
-	ps = new std::string(*pstmp);
+	ps = new std::string(*rhs.ps);
 	i = rhs.i;
 }
 
 HasPtr& HasPtr::operator=(const HasPtr &rhs){
-	std::string *pstmp(rhs.ps);
-	ps = new std::string(*pstmp);
+	std::string *newps = new std::string(*rhs.ps);
+	delete ps;
+	ps = newps;
 	i = rhs.i;
 	return *this;
 }
