@@ -8,6 +8,7 @@ class HasPtr{
 public:
 	HasPtr(const std::string &s = std::string()): ps(new std::string(s)), i(0) { }
 	HasPtr(const HasPtr &rhs);
+	HasPtr& operator=(const HasPtr &rhs);
 	std::ostream& print(std::ostream &os);
 private:
 	std::string *ps;
